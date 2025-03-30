@@ -136,4 +136,8 @@ header p {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
   }
+
+  .todo-app {
+    width: auto;
+  }
 }

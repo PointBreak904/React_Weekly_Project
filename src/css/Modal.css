@@ -148,5 +148,7 @@ Modal.css */ .modal-backdrop {
 @media (max-width: 576px) {
   .modal-container {
     width: 92%;
+    margin: 0;
+    padding: 0;
   }
 }
