@@ -77,20 +77,22 @@ function TodoForm({ onAdd, categories, onCategoryAdd }) {
                   value={newCategory}
                   onChange={(e) => setNewCategory(e.target.value)}
                 />
-                <button
-                  type="button"
-                  onClick={handleAddCategory}
-                  className="small-button"
-                >
-                  Add
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setIsAddingCategory(false)}
-                  className="small-button cancel"
-                >
-                  Cancel
-                </button>
+                <div className="group_btn">
+                  <button
+                    type="button"
+                    onClick={handleAddCategory}
+                    className="small-button"
+                  >
+                    Add
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsAddingCategory(false)}
+                    className="small-button cancel"
+                  >
+                    Cancel
+                  </button>
+                </div>
               </div>
             ) : (
               <div className="category-selector">
