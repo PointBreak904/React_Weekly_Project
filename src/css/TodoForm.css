@@ -107,4 +107,8 @@
     margin: 10px;
   }
 
+  
+  .form-group input {
+    width: auto;
+  }
 }
