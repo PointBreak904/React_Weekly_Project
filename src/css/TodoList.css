@@ -15,6 +15,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .category-title {
@@ -27,6 +29,7 @@
 }
 
 .empty-state {
+  width: 300px;
   text-align: center;
   color: #6c757d;
   padding: 3rem 1rem;
@@ -34,4 +37,22 @@
   background-color: #f8f9fa;
   border-radius: 6px;
   margin-top: 1rem;
+  max-width: 60%;
+}
+
+@media (max-width: 576px) {
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .todo-left {
+    width: 100%;
+  }
+
+  .todo-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
